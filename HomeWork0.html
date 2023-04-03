@@ -4,15 +4,51 @@
     цены в долларах - $0.84, $1232.84, $4
     дата в виде - 30/12/2016 - день, месяц, год
  -->
- <!DOCTYPE html>
- <html lang="en">
- <head>
- 	<meta charset="UTF-8">
- 	<title>Document</title>
- </head>
- <body>
-     Lorem ipsum dolor sit amet  55555 consectetur adipisicing elit. Fuga deserunt 48961 rerum atque vero soluta error illo, mollitia hic necessitatibus harum 33125 ipsam veniam! Placeat cumque tempore voluptatibus velit quo quasi dolores.
- 	<script type="text/javascript">
- 	</script>
- </body>
- </html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    индекс - 55535 - 5 цены в долларах - $0.84, $1232.84, $4 дата в виде -
+    30/12/2016 - день, месяц, год Lorem ipsum dolor sit amet 55555 consectetur
+    adipisicing elit. Fuga deserunt 48961 rerum atque vero soluta error illo,
+    mollitia hic necessitatibus harum 33125 ipsam veniam! Placeat cumque tempore
+    voluptatibus velit quo quasi dolores.
+    <script type="text/javascript">
+      // 55535
+      let pattern = /\d{5}/;
+      let text = 55535;
+      //   console.log(pattern.test(text));
+
+      //numbers ip адресс, пример 255.255.255.255 /.n/
+      let ip = /\d{3}\.\d{3}\.\d{3}\.\d{3}/;
+
+      let realip = "255.255.255.255";
+      console.log(ip.test(realip));
+
+      //   var patter =
+      //     /^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])/;
+      //   let str = "255.255.255.255";
+      //   console.log(patter.test(str));
+
+      //цены в долларах - $0.84, $1232.84, $4
+      //
+      //   let price = /\$\d+(\.\d+)*/g;
+      let price = /^(\$\d+\.\d+)$|^(\$\d+)$/;
+      let ex1 = "$0.84";
+      let ex2 = "$1232.84";
+      let ex3 = "$4";
+
+      console.log(price.test(ex1));
+      console.log(price.test(ex2));
+      console.log(price.test(ex3));
+
+      //дата в виде - 30/12/2016 - день, месяц, год
+      let years = /\d{1,2}\/\d{1,2}\/\d{4}/;
+      let exYears = "30/12/2016";
+      console.log(years.test(exYears));
+    </script>
+  </body>
+</html>

@@ -16,10 +16,40 @@
         justify-content: center;
         float: left;
         font-size: 22px;
+        margin-bottom: 40px;
+      }
+
+      body {
+        width: 600px;
+      }
+
+      a {
+        border: 2px solid green;
+        background-color: bisque;
+        margin-left: 20px;
+        padding: 3px;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        margin-top: 40px;
+        display: block;
+        width: fit-content;
+      }
+
+      a:hover {
+        border: none;
+        background-color: aquamarine;
+      }
+
+      .text {
+        margin-left: 20px;
       }
     </style>
   </head>
   <body>
+    <a href="HomeWork0.html">Ссылка на второе задание</a>
+
+    <br />
+    <br />
     <div></div>
     <div></div>
     <div></div>
@@ -28,11 +58,16 @@
     <br />
     <br />
     <br />
+
     <br />
-    <p>
-      <!-- Доработайте пример, 005_thisExample.html, при наведении мыши к одному из блоков, цвет блока должен измениться, на уникальный, такой которого еще нету у существующих блоков.
-      Также выведите в блок текстовое оповещение о информации цвета, который используется для фона данного блока.
-      При попытке закрыть вкладку, придупредите пользователя о том что информация будет утеряна. Используйте window.onload.  -->
+
+    <p class="text">
+      Доработайте пример, 005_thisExample.html, при наведении мыши к одному из
+      блоков, цвет блока должен измениться, на уникальный, такой которого еще
+      нету у существующих блоков. Также выведите в блок текстовое оповещение о
+      информации цвета, который используется для фона данного блока. При попытке
+      закрыть вкладку, придупредите пользователя о том что информация будет
+      утеряна. Используйте window.onload.
     </p>
     <script>
       var divArr = document.getElementsByTagName("div");
