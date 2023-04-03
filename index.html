@@ -78,6 +78,10 @@
           this.style.backgroundColor = bGC;
           this.innerHTML = bGC;
         };
+
+        window.onbeforeunload = function () {
+          return "Данные не сохранены. Точно перейти?";
+        };
       }
     </script>
   </body>
